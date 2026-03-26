@@ -1,0 +1,37 @@
+# Evatt AI — Legal Casebase Engine v2
+# Python >= 3.10
+
+# ── Web Framework ─────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
+
+# ── Relational Database ───────────────────────────────────────
+psycopg2-binary>=2.9.9       # PostgreSQL driver
+sqlalchemy>=2.0.30           # Optional ORM / migration layer
+alembic>=1.13.0              # Schema migrations
+
+# ── Vector Store ──────────────────────────────────────────────
+chromadb>=0.5.0
+
+# ── Hybrid Search ─────────────────────────────────────────────
+rank-bm25>=0.2.2             # BM25Okapi implementation
+
+# ── Embeddings ────────────────────────────────────────────────
+openai>=1.30.0
+
+# ── LLM (citator + RAG) ──────────────────────────────────────
+anthropic>=0.28.0
+
+# ── PDF Extraction ────────────────────────────────────────────
+pypdf>=4.2.0
+
+# ── Chunking ──────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-text-splitters>=0.2.0
+
+# ── CLI / UX ──────────────────────────────────────────────────
+rich>=13.7.0
+
+# ── Typing backport ───────────────────────────────────────────
+typing-extensions>=4.9.0
